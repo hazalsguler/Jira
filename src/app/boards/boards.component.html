@@ -3,7 +3,7 @@
 </div>
 
 <div style="display: flex; justify-content: space-between; background-color: yellow;
-align-items: center; margin: 5px 30px;" *ngFor="let board of boardService.boards; let i = index" [routerLink]="'/view-board/'" + i>
+align-items: center; margin: 5px 30px;" *ngFor="let board of boardService.boards; let i = index" [routerLink]="'/view-board/' + i">
    <div style="padding: 0px 20px;">
     {{board.title}}
    </div>

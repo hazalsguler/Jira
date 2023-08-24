@@ -9,18 +9,23 @@ import { BoardsComponent } from './boards/boards.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import { BoardsDialogComponent } from './boards/boards-dialog/boards-dialog.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import { ViewBoardComponent } from './view-board/view-board.component';
+import { ViewBoardDialogComponent } from './view-board/view-board-dialog/view-board-dialog.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatCardModule} from '@angular/material/card';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     BoardsComponent,
     BoardsDialogComponent,
-    ViewBoardComponent
+    ViewBoardComponent,
+    ViewBoardDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,11 @@ import { ViewBoardComponent } from './view-board/view-board.component';
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    MatSnackBarModule,
+    MatCardModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
